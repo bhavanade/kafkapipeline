@@ -18,28 +18,24 @@ Python 3.8+ installed with pip.
 Step-by-Step Setup
 
 1. Clone the Repository
-bash
-Copy code
-git clone <your-repo-url>
+
+git clone https://github.com/bhavanade/kafkapipeline.git
 cd kafka_pipeline
 
 2. Start Docker Containers
 Run the following command to start Kafka and supporting services:
-bash
-Copy code
+
 docker-compose up
 
 3. Install Python Dependencies
 Create a virtual environment and install dependencies:
-bash
-Copy code
+
 pip install pipenv
 pipenv install
 
 4. Run the Kafka Consumer/Producer
 Start the Python script to consume data from user-login topic, process it, and produce it to processed-login topic:
-bash
-Copy code
+
 pipenv run python kafka_consumer.py
 
 
